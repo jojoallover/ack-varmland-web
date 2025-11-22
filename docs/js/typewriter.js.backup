@@ -1,0 +1,37 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const codeBlocks = document.querySelectorAll('pre code');
+
+    codeBlocks.forEach((block) => {
+        // 1. Spara originaltexten
+        let text = block.innerText;
+        
+        // 2. FIXEN: Gör elementet synligt igen precis innan vi tömmer det.
+        // Eftersom CSS satte det till hidden, måste vi manuellt sätta visible nu.
+        block.style.visibility = 'visible';
+        
+        // 3. Töm blocket (nu är det synligt men tomt)
+        block.innerHTML = '';
+        
+        // 4. Skapa cursorn
+        let cursorSpan = document.createElement('span');
+        cursorSpan.className = 'typing-cursor';
+        cursorSpan.innerHTML = '█'; 
+        block.appendChild(cursorSpan);
+
+        let i = 0;
+        let speed = 5; // Justera hastigheten här om du vill (lägre = snabbare)
+
+        function typeWriter() {
+            if (i < text.length) {
+                let char = text.charAt(i);
+                cursorSpan.insertAdjacentText('beforebegin', char);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                cursorSpan.remove(); 
+            }
+        }
+
+        typeWriter();
+    });
+});

@@ -1,0 +1,30 @@
+<header class="header">
+	<link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}">
+  <div class="header__inner">
+    {{ if len $.Site.Menus }}
+      {{ partial "mobile-menu.html" . }}
+    {{ end }}
+    {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}
+      {{ partial "language-menu.html" . }}
+    {{ end }}
+  </div>
+  {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
+  {{ end }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hämta knappen via dess ID
+        const toggleButton = document.getElementById('light-mode-toggle');
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', function() {
+                // Den tekniska varningen/skämtet
+                alert("WARNING: Light mode attracts bugs. Please remain in dark mode.");
+
+                // Valfritt: Om du vill att knappen ska bli inaktiv efter första klicket
+                // toggleButton.disabled = true;
+            });
+        }
+    });
+</script>
+</header>

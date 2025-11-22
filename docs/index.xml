@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ack Värmland on ACK Värmland AB</title>
+    <link>https://jojoallover.github.io/ack-varmland-web/</link>
+    <description>Recent content in Ack Värmland on ACK Värmland AB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>sv-se</language>
+    <lastBuildDate>Sat, 22 Nov 2025 13:00:00 +0100</lastBuildDate><atom:link href="https://jojoallover.github.io/ack-varmland-web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contact_protocol</title>
+      <link>https://jojoallover.github.io/ack-varmland-web/contact/</link>
+      <pubDate>Sat, 22 Nov 2025 13:00:00 +0100</pubDate>
+      
+      <guid>https://jojoallover.github.io/ack-varmland-web/contact/</guid>
+      <description>Initiating Handshake guest@internet:~$ ./contact_me &amp;gt; Email: hello@ackvarmland.se [SEND_MAIL] guest@internet:~$ ping ackvarmland.se PING ackvarmland.se (127.0.0.1): 56 data bytes 64 bytes from server: icmp_seq=0 ttl=64 time=2.3 ms 64 bytes from server: icmp_seq=1 ttl=64 time=2.4 ms  --- ackvarmland.se ping statistics --- 2 packets transmitted, 2 packets received, 0.0% packet loss  guest@internet:~$ ./contact_me &amp;gt; Email: jonas@ackvarmland.se [SEND_MAIL] &amp;gt; LinkedIn: in/jonsson-jonas/ [CONNECT] &amp;gt; Location: Stockholm, Sweden [LOCATE] &amp;gt; Origin: Värmland, Sweden [ORIGIN] guest@internet:~$ _ </description>
+    </item>
+    
+    <item>
+      <title>footer</title>
+      <link>https://jojoallover.github.io/ack-varmland-web/footer/</link>
+      <pubDate>Sat, 22 Nov 2025 13:00:00 +0100</pubDate>
+      
+      <guid>https://jojoallover.github.io/ack-varmland-web/footer/</guid>
+      <description>{{ $bundle := slice $menu $cp | resources.Concat &amp;ldquo;bundle.js&amp;rdquo; | resources.Minify }}
+{{ partial &amp;ldquo;extended_footer.html&amp;rdquo; . }}</description>
+    </item>
+    
+    <item>
+      <title>man ack-varmland</title>
+      <link>https://jojoallover.github.io/ack-varmland-web/about/</link>
+      <pubDate>Sat, 22 Nov 2025 13:00:00 +0100</pubDate>
+      
+      <guid>https://jojoallover.github.io/ack-varmland-web/about/</guid>
+      <description>root@ackvarmland:~$ man ack-varmland
+SYNOPSIS NAME  ack-varmland — Engineering reliability, from kernel to cloud.  SYNOPSIS  ack [OPTIONS] [TARGET_INFRASTRUCTURE]  DESCRIPTION  Ack Värmland provides specialized Platform Engineering consultancy.  Unlike standard consultancy daemons that just idle in the background,  this process actively optimizes the entire OSI stack.   Rooted in the stability of the Värmland soil, but operating at global  scale (200M+ MAU). The core philosophy is based on &amp;#34;Servant Leadership&amp;#34;  — empowering teams to clear obstacles rather than creating them.</description>
+    </item>
+    
+  </channel>
+</rss>
