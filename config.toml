@@ -1,0 +1,27 @@
+baseURL = "/"
+languageCode = "sv-se"  # Eller en-us om du vill ha engelska som standardspråk
+title = "ACK Värmland AB"
+theme = "terminal"
+
+[params]
+    customCSS = ["css/custom.css"]
+    # Färgtema: Välj "dark" för vår terminal-look
+    themeColor = "dark"
+    # Visa din GitHub/Sociala länkar (optional)
+    showAppearanceSwitcher = false
+
+    [[menu.main]]
+    name = "services.json"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    name = "man ack-varmland"
+    url = "/about"
+    weight = 20
+
+[[menu.main]]
+    name = "contact_protocol"
+    url = "/contact"
+    weight = 30
+
