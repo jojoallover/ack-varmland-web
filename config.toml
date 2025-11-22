@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://jojoallover.github.io/ack-varmland-web/"
 languageCode = "sv-se"  # Eller en-us om du vill ha engelska som standardspråk
 title = "ACK Värmland AB"
 theme = "terminal"
